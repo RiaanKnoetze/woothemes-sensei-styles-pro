@@ -62,8 +62,8 @@
   clear: both; }
   .sensei .sensei-breadcrumb:before {
     font-family: 'FontAwesomeSensei';
-    display: inline-block;
-    font-size: 100%;
+    display: inline-block !important;
+    font-size: 100% !important;
     margin-right: .618em;
     font-weight: normal;
     line-height: 1em;
@@ -93,8 +93,8 @@
   border-left: 1px solid #e6e6e6; }
   .sensei .nav-next:after {
     font-family: 'FontAwesomeSensei';
-    display: inline-block;
-    font-size: 100%;
+    display: inline-block !important;
+    font-size: 100% !important;
     margin-left: .618em;
     font-weight: normal;
     line-height: 1em;
@@ -108,8 +108,8 @@
   border-right: 1px solid #e6e6e6; }
   .sensei .nav-prev:before {
     font-family: 'FontAwesomeSensei';
-    display: inline-block;
-    font-size: 100%;
+    display: inline-block !important;
+    font-size: 100% !important;
     margin-right: .618em;
     font-weight: normal;
     line-height: 1em;
@@ -172,8 +172,8 @@
       #main .course .sensei-course-meta span:before,
       #main .course-container .sensei-course-meta span:before {
         font-family: 'FontAwesomeSensei';
-        display: inline-block;
-        font-size: 100%;
+        display: inline-block !important;
+        font-size: 100% !important;
         margin-right: .618em;
         font-weight: normal;
         line-height: 1em;
@@ -226,8 +226,8 @@
       #main .course .course-lessons .lesson p.lesson-meta span:before,
       #main .course-container .course-lessons .lesson p.lesson-meta span:before {
         font-family: 'FontAwesomeSensei';
-        display: inline-block;
-        font-size: 100%;
+        display: inline-block !important;
+        font-size: 100% !important;
         margin-right: .618em;
         font-weight: normal;
         line-height: 1em;
@@ -247,12 +247,12 @@
       font-style: normal; }
       #main .course .course-lessons .lesson p.lesson-meta .lesson-status.complete,
       #main .course-container .course-lessons .lesson p.lesson-meta .lesson-status.complete {
-        color: #8fae1b; }
+        color: #555; }
         #main .course .course-lessons .lesson p.lesson-meta .lesson-status.complete:before,
         #main .course-container .course-lessons .lesson p.lesson-meta .lesson-status.complete:before {
           font-family: 'FontAwesomeSensei';
-          display: inline-block;
-          font-size: 100%;
+          display: inline-block !important;
+          font-size: 100% !important;
           margin-right: .618em;
           font-weight: normal;
           line-height: 1em;
@@ -264,8 +264,8 @@
         #main .course .course-lessons .lesson p.lesson-meta .lesson-status.in-progress:before,
         #main .course-container .course-lessons .lesson p.lesson-meta .lesson-status.in-progress:before {
           font-family: 'FontAwesomeSensei';
-          display: inline-block;
-          font-size: 100%;
+          display: inline-block !important;
+          font-size: 100% !important;
           margin-right: .618em;
           font-weight: normal;
           line-height: 1em;
@@ -286,8 +286,8 @@
   /* Opera/IE 8+ */ }
   .course .status:before, .course-lessons .status:before, .course-container .status:before {
     font-family: 'FontAwesomeSensei';
-    display: inline-block;
-    font-size: 100%;
+    display: inline-block !important;
+    font-size: 100% !important;
     margin-right: .618em;
     font-weight: normal;
     line-height: 1em;
@@ -348,8 +348,8 @@
 /**
  * Modules
  */
-.module-archive #main .status,
-#main .course .module-status {
+.sensei .module-archive #main .status,
+.sensei #main .course .module-status {
   padding: .382em 1em;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -361,119 +361,129 @@
   background: #c6c6c6;
   clear: both;
   display: inline-block; }
+  .sensei .module-archive #main .status:before,
+  .sensei #main .course .module-status:before {
+    display: inline-block;
+    font-size: 100%;
+    margin-right: .618em;
+    font-weight: normal;
+    line-height: 1em;
+    width: 1em; }
+  .sensei .module-archive #main .status.completed,
+  .sensei #main .course .module-status.completed {
+    background: transparent;
+    border-radius: 0;
+    color: #555;
+    border-top: none;
+    border-left: 1px solid #e6e6e6;
+    top: 0.857em; }
+    .sensei .module-archive #main .status.completed:before,
+    .sensei #main .course .module-status.completed:before {
+      content: "\f00c"; }
+  .sensei .module-archive #main .status.in-progress:before,
+  .sensei #main .course .module-status.in-progress:before {
+    content: "\f110"; }
 
-.module-archive #main .status:before,
-#main .course .module-status:before {
-  display: inline-block;
-  font-size: 100%;
-  margin-right: .618em;
-  font-weight: normal;
-  line-height: 1em;
-  width: 1em; }
-
-.module-archive #main .status.completed,
-#main .course .module-status.completed {
-  background: #63a95f; }
-
-.module-archive #main .status.completed:before,
-#main .course .module-status.completed:before {
-  content: "\f00c"; }
-
-.module-archive #main .status.in-progress:before,
-#main .course .module-status.in-progress:before {
-  content: "\f110"; }
-
-.module-lessons .lesson-status {
+.sensei .module-lessons .lesson-status {
   font-style: normal; }
+  .sensei .module-lessons .lesson-status.complete {
+    color: #63a95f; }
+    .sensei .module-lessons .lesson-status.complete:before {
+      display: inline-block;
+      font-size: 100%;
+      margin-right: .618em;
+      font-weight: normal;
+      line-height: 1em;
+      width: 1em;
+      content: '\f00c'; }
 
-.module-lessons .lesson-status.complete {
-  color: #63a95f; }
-
-.module-lessons .lesson-status.complete:before {
-  display: inline-block;
-  font-size: 100%;
-  margin-right: .618em;
-  font-weight: normal;
-  line-height: 1em;
-  width: 1em;
-  content: '\f00c'; }
-
-.module {
+.sensei .module {
   position: relative;
-  margin: 0 0 1.618em;
-  border: 1px solid #e6e6e6;
+  margin: 0 0 1.618em !important;
+  border: 1px solid #e6e6e6 !important;
   border-bottom: none; }
-  .module > header {
+  .sensei .module > header {
     background: #f7f7f7; }
-    .module > header h2 {
+    .sensei .module > header h2 {
       margin-bottom: 0;
       padding: 0.5em; }
-      .module > header h2 a {
+      .sensei .module > header h2 a {
         color: #555; }
-  .module .module-description {
+  .sensei .module .module-description {
     padding: 1em;
     margin: 0;
     font-style: italic; }
-  .module .module-lessons header {
-    margin: 0;
-    padding: 0.618em 1em;
-    border-top: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6; }
-    .module .module-lessons header h3 {
-      margin: 0; }
-  .module .module-lessons ul {
-    margin: 0;
-    padding: 0; }
-    .module .module-lessons ul li {
-      list-style: none;
+  .sensei .module .module-lessons header {
+    margin: 0 !important;
+    padding: 0.618em 1em !important;
+    border-top: 1px solid #e6e6e6 !important;
+    border-bottom: 1px solid #e6e6e6;
+    background: transparent; }
+    .sensei .module .module-lessons header h3 {
       margin: 0;
+      font-size: 1.618em; }
+  .sensei .module .module-lessons ul {
+    margin: 0 !important;
+    padding: 0 !important; }
+    .sensei .module .module-lessons ul li {
+      list-style: none;
+      margin: 0 !important;
       position: relative; }
-      .module .module-lessons ul li a {
+      .sensei .module .module-lessons ul li a {
         display: block;
         border-bottom: 1px solid #e6e6e6;
         padding: 0.618em 1em;
         text-decoration: none;
-        color: #1e85be; }
-        .module .module-lessons ul li a:before {
+        color: #1e85be;
+        background: transparent;
+        font-size: 1em;
+        font-weight: normal; }
+        .sensei .module .module-lessons ul li a:before {
           font-family: 'FontAwesomeSensei';
-          display: inline-block;
-          font-size: 100%;
+          display: inline-block !important;
+          font-size: 100% !important;
           margin-right: .618em;
           font-weight: normal;
           line-height: 1em;
           width: 1em;
-          font-size: 1.2em;
+          font-size: 1em !important;
           content: '\f1db';
-          color: #d5d5d5; }
-        .module .module-lessons ul li a:hover:before {
+          color: #d5d5d5;
+          position: relative;
+          left: 0;
+          top: 0; }
+        .sensei .module .module-lessons ul li a:hover:before {
           content: '\f192';
           color: #555; }
-        .module .module-lessons ul li a .preview-label {
+        .sensei .module .module-lessons ul li a .preview-label {
           float: right;
           color: #8fae1b;
           display: inline-block;
           position: relative; }
-          .module .module-lessons ul li a .preview-label:before {
+          .sensei .module .module-lessons ul li a .preview-label:before {
             font-family: 'FontAwesomeSensei';
-            display: inline-block;
-            font-size: 100%;
+            display: inline-block !important;
+            font-size: 100% !important;
             margin-right: .618em;
             font-weight: normal;
             line-height: 1em;
             width: 1em;
             margin-right: 0.168em;
             content: '\f046'; }
-      .module .module-lessons ul li.completed a {
+      .sensei .module .module-lessons ul li.completed a {
         color: #555; }
-        .module .module-lessons ul li.completed a:before {
+        .sensei .module .module-lessons ul li.completed a:before {
           content: '\f00c';
           color: #555; }
-  .module .module-status {
+  .sensei .module .entry {
+    position: relative; }
+  .sensei .module .module-status {
     position: absolute;
     right: 20px;
     top: 1em;
     margin: 0 !important;
-    font-size: inherit !important; }
+    font-size: inherit !important;
+    width: auto; }
 
 /**
  * Quizes
@@ -512,9 +522,9 @@
         font-size: 0.9em;
         list-style: none; }
         .quiz form ol#sensei-quiz-list li ul li.right_answer {
-          color: green; }
+          color: #8fae1b; }
         .quiz form ol#sensei-quiz-list li ul li.user_right {
-          color: green;
+          color: #8fae1b;
           font-weight: 700; }
         .quiz form ol#sensei-quiz-list li ul li.user_wrong {
           color: red; }
@@ -532,8 +542,8 @@
       .quiz form ol#sensei-quiz-list li .answer_message span {
         text-align: right; }
       .quiz form ol#sensei-quiz-list li .answer_message.user_right {
-        color: green;
-        border-color: green; }
+        color: #8fae1b;
+        border-color: #8fae1b; }
       .quiz form ol#sensei-quiz-list li .answer_message.user_wrong {
         color: red;
         border-color: red; }
@@ -932,8 +942,8 @@
   border-top: 3px solid; }
   .sensei p.sensei-message:before, .sensei div.sensei-message:before, .course-container p.sensei-message:before, .course-container div.sensei-message:before, .course p.sensei-message:before, .course div.sensei-message:before, .lesson p.sensei-message:before, .lesson div.sensei-message:before, .quiz p.sensei-message:before, .quiz div.sensei-message:before, .learner-info p.sensei-message:before, .learner-info div.sensei-message:before {
     font-family: 'FontAwesomeSensei';
-    display: inline-block;
-    font-size: 100%;
+    display: inline-block !important;
+    font-size: 100% !important;
     margin-right: .618em;
     font-weight: normal;
     line-height: 1em;

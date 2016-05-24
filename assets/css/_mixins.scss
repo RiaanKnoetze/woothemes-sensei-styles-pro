@@ -29,8 +29,8 @@ $fontpath:          'assets/fonts/';
 @mixin iconafter()
 {
     font-family: 'FontAwesomeSensei';
-    display: inline-block;
-    font-size:100%;
+    display: inline-block !important;
+    font-size: 100% !important;
     margin-left:.618em;
     font-weight: normal;
     line-height: 1em;
@@ -41,8 +41,8 @@ $fontpath:          'assets/fonts/';
 @mixin iconbefore()
 {
     font-family: 'FontAwesomeSensei';
-    display: inline-block;
-    font-size:100%;
+    display: inline-block !important;
+    font-size: 100% !important;
     margin-right:.618em;
     font-weight: normal;
     line-height: 1em;

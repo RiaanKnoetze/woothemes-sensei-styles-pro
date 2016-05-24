@@ -11,7 +11,7 @@ add_filter( 'sensei_disable_styles', '__return_true' );
 
 
 // Enqueue custom plugin scripes and styles
-add_action( 'wp_enqueue_scripts', 'sensei_pro_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'sensei_pro_enqueue_styles', 20 );
 
 function sensei_pro_enqueue_styles() {
 	global $sensei_styles_dir;
