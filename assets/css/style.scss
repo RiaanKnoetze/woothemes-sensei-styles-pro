@@ -1213,6 +1213,10 @@ a.sensei-certificate-link {
   }
   .single.logged-in #main .type-course  {
     border: none;
+
+    .woo-image {
+      display: none;
+    }
   }
 
   // Course Archives

@@ -1272,6 +1272,8 @@ a.sensei-certificate-link {
     margin-top: .53em; }
   .single.logged-in #main .type-course {
     border: none; }
+    .single.logged-in #main .type-course .woo-image {
+      display: none; }
   .sensei-ordering {
     text-align: right;
     float: right;
