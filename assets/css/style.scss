@@ -1203,11 +1203,22 @@ a.sensei-certificate-link {
  * Responsive Fixes 
  */
 
-@media only screen and (min-width: 768px)  {
+@media only screen and (max-width: 768px)  {
   #main .course  {
     .course-meta  {
       .course-start  {
         margin-top: .53em;
+      }
+    }
+
+    .course-content {
+      .course-featured-image {
+        display: none;
+
+        ~ header, ~ .entry {
+        width: 100%;
+        float: none;
+      }
       }
     }
   }
@@ -1253,7 +1264,21 @@ a.sensei-certificate-link {
         }
       }
     }
+
+  .sensei-course-meta,
+  img.woo-image {
+    display: none;
   }
+
+  .course {
+    .course-featured-image {
+      ~ header, ~ .entry {
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+}
 }
 
 .sensei-pagination{

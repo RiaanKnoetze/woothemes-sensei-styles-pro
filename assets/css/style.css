@@ -1267,9 +1267,14 @@ a.sensei-certificate-link {
 /**
  * Responsive Fixes 
  */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #main .course .course-meta .course-start {
     margin-top: .53em; }
+  #main .course .course-content .course-featured-image {
+    display: none; }
+    #main .course .course-content .course-featured-image ~ header, #main .course .course-content .course-featured-image ~ .entry {
+      width: 100%;
+      float: none; }
   .single.logged-in #main .type-course {
     border: none; }
     .single.logged-in #main .type-course .woo-image {
@@ -1292,7 +1297,13 @@ a.sensei-certificate-link {
         #my-courses.ui-tabs .ui-tabs-nav li.ui-state-active a:after {
           display: none; }
       #my-courses.ui-tabs .ui-tabs-nav li:not(:first-child) {
-        border-top: none; } }
+        border-top: none; }
+  #my-courses .sensei-course-meta,
+  #my-courses img.woo-image {
+    display: none; }
+  #my-courses .course .course-featured-image ~ header, #my-courses .course .course-featured-image ~ .entry {
+    width: 100%;
+    float: none; } }
 
 .sensei-pagination .page-numbers li {
   display: inline-block; }
