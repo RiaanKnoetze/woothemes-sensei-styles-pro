@@ -955,7 +955,8 @@
     position: relative;
     top: .1em; }
   .sensei p.sensei-message a, .sensei div.sensei-message a, .course-container p.sensei-message a, .course-container div.sensei-message a, .course p.sensei-message a, .course div.sensei-message a, .lesson p.sensei-message a, .lesson div.sensei-message a, .quiz p.sensei-message a, .quiz div.sensei-message a, .learner-info p.sensei-message a, .learner-info div.sensei-message a {
-    box-shadow: 0 1px 0 0 currentColor; }
+    box-shadow: 0 1px 0 0 currentColor;
+    color: #1e85be; }
     .sensei p.sensei-message a:hover, .sensei div.sensei-message a:hover, .course-container p.sensei-message a:hover, .course-container div.sensei-message a:hover, .course p.sensei-message a:hover, .course div.sensei-message a:hover, .lesson p.sensei-message a:hover, .lesson div.sensei-message a:hover, .quiz p.sensei-message a:hover, .quiz div.sensei-message a:hover, .learner-info p.sensei-message a:hover, .learner-info div.sensei-message a:hover {
       box-shadow: none; }
     .sensei p.sensei-message a.next-lesson, .sensei div.sensei-message a.next-lesson, .course-container p.sensei-message a.next-lesson, .course-container div.sensei-message a.next-lesson, .course p.sensei-message a.next-lesson, .course div.sensei-message a.next-lesson, .lesson p.sensei-message a.next-lesson, .lesson div.sensei-message a.next-lesson, .quiz p.sensei-message a.next-lesson, .quiz div.sensei-message a.next-lesson, .learner-info p.sensei-message a.next-lesson, .learner-info div.sensei-message a.next-lesson {
@@ -963,13 +964,17 @@
       padding: .618em 1em;
       line-height: 1em;
       font-weight: bold;
-      background: #e6e6e6;
-      color: #555;
-      box-shadow: none; }
+      background: #8fae1b;
+      color: #fff;
+      box-shadow: none;
+      float: right;
+      margin: -0.4em -1em 0 0; }
       .sensei p.sensei-message a.next-lesson:hover, .sensei div.sensei-message a.next-lesson:hover, .course-container p.sensei-message a.next-lesson:hover, .course-container div.sensei-message a.next-lesson:hover, .course p.sensei-message a.next-lesson:hover, .course div.sensei-message a.next-lesson:hover, .lesson p.sensei-message a.next-lesson:hover, .lesson div.sensei-message a.next-lesson:hover, .quiz p.sensei-message a.next-lesson:hover, .quiz div.sensei-message a.next-lesson:hover, .learner-info p.sensei-message a.next-lesson:hover, .learner-info div.sensei-message a.next-lesson:hover {
-        background: #d9d9d9; }
+        background: #596c11; }
   .sensei p.sensei-message.alert, .sensei div.sensei-message.alert, .course-container p.sensei-message.alert, .course-container div.sensei-message.alert, .course p.sensei-message.alert, .course div.sensei-message.alert, .lesson p.sensei-message.alert, .lesson div.sensei-message.alert, .quiz p.sensei-message.alert, .quiz div.sensei-message.alert, .learner-info p.sensei-message.alert, .learner-info div.sensei-message.alert {
     border-top-color: #b81c23; }
+    .sensei p.sensei-message.alert a, .sensei div.sensei-message.alert a, .course-container p.sensei-message.alert a, .course-container div.sensei-message.alert a, .course p.sensei-message.alert a, .course div.sensei-message.alert a, .lesson p.sensei-message.alert a, .lesson div.sensei-message.alert a, .quiz p.sensei-message.alert a, .quiz div.sensei-message.alert a, .learner-info p.sensei-message.alert a, .learner-info div.sensei-message.alert a {
+      color: #b81c23; }
     .sensei p.sensei-message.alert:before, .sensei div.sensei-message.alert:before, .course-container p.sensei-message.alert:before, .course-container div.sensei-message.alert:before, .course p.sensei-message.alert:before, .course div.sensei-message.alert:before, .lesson p.sensei-message.alert:before, .lesson div.sensei-message.alert:before, .quiz p.sensei-message.alert:before, .quiz div.sensei-message.alert:before, .learner-info p.sensei-message.alert:before, .learner-info div.sensei-message.alert:before {
       content: '\f069';
       color: #b81c23; }
@@ -1330,6 +1335,9 @@ a.sensei-certificate-link {
 /**
  * Core Theme Styles
  */
+.sensei-storefront #my-courses.ui-tabs .ui-tabs-nav li {
+  margin-right: -3px; }
+
 .sensei-twentysixteen.single-course #main .course,
 .sensei-twentysixteen.single-lesson #main .lesson,
 .sensei-twentysixteen.single-quiz #main .quiz {

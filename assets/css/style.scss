@@ -1087,6 +1087,7 @@
     }
     a {
       box-shadow: 0 1px 0 0 currentColor;
+      color: $color_links;
       &:hover {
         box-shadow: none;
       }
@@ -1095,16 +1096,22 @@
         padding: .618em 1em;
         line-height: 1em;
         font-weight: bold;
-        background: darken($bg_light, 10%);
-        color: $color_body;
+        background: $success;
+        color: #fff;
         box-shadow: none;
+        float: right;
+        margin: -0.4em -1em 0 0;
         &:hover  {
-          background: darken($bg_light, 15%);
+          background: darken($success, 15%);
         }
       }
     }
     &.alert {
       border-top-color: $error;
+
+      a {
+        color: $error;
+      }
       &:before  {
         content: '\f069';
         color: $error;
@@ -1346,6 +1353,13 @@ a.sensei-certificate-link {
 /**
  * Core Theme Styles
  */
+
+// Storefront
+.sensei-storefront {
+  #my-courses.ui-tabs .ui-tabs-nav li {
+    margin-right: -3px;
+  }
+}
 
 // Twenty Sixteen
 .sensei-twentysixteen {
