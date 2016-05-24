@@ -1,12 +1,3 @@
-/*
-Plugin Name: Sensei
-Plugin URI: https://www.woothemes.com/products/sensei/
-Description: Sensei by WooThemes is the best Learning Management System ever!
-Version: 1.9.x
-Author: WooThemes
-Author URI: http://woothemes.com/
-License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-*/
 /**
  * Mixins
  */
@@ -821,37 +812,41 @@ License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2
 /**
  * Course Archives
  */
-#main .course .course-content .course-featured-image,
-#main .course-container .course-content .course-featured-image {
+#main-course .course .course-content .course-featured-image,
+#main-course .course-container .course-content .course-featured-image {
   width: 20%;
   margin-right: 5%;
   display: block;
   float: left; }
-  #main .course .course-content .course-featured-image:after,
-  #main .course-container .course-content .course-featured-image:after {
+  #main-course .course .course-content .course-featured-image:after,
+  #main-course .course-container .course-content .course-featured-image:after {
     content: "\0020";
     display: block;
     height: 0;
     overflow: hidden;
     clear: both; }
-  #main .course .course-content .course-featured-image .woo-image,
-  #main .course-container .course-content .course-featured-image .woo-image {
+  #main-course .course .course-content .course-featured-image .woo-image,
+  #main-course .course-container .course-content .course-featured-image .woo-image {
     margin: 0; }
 
-#main .course .course-content header, #main .course .course-content .entry,
-#main .course-container .course-content header,
-#main .course-container .course-content .entry {
+#main-course .course .course-content header, #main-course .course .course-content .entry,
+#main-course .course-container .course-content header,
+#main-course .course-container .course-content .entry {
   float: left;
   width: 100%; }
+  #main-course .course .course-content header a, #main-course .course .course-content .entry a,
+  #main-course .course-container .course-content header a,
+  #main-course .course-container .course-content .entry a {
+    color: #1e85be; }
 
-#main .course .course-content .course-featured-image ~ header,
-#main .course .course-content .course-featured-image ~ .entry,
-#main .course-container .course-content .course-featured-image ~ header,
-#main .course-container .course-content .course-featured-image ~ .entry {
+#main-course .course .course-content .course-featured-image ~ header,
+#main-course .course .course-content .course-featured-image ~ .entry,
+#main-course .course-container .course-content .course-featured-image ~ header,
+#main-course .course-container .course-content .course-featured-image ~ .entry {
   width: 75%; }
 
-#main .course .course-content:after,
-#main .course-container .course-content:after {
+#main-course .course .course-content:after,
+#main-course .course-container .course-content:after {
   content: "\0020";
   display: block;
   height: 0;

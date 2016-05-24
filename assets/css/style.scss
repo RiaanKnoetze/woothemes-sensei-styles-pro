@@ -1,13 +1,3 @@
-/*
-Plugin Name: Sensei
-Plugin URI: https://www.woothemes.com/products/sensei/
-Description: Sensei by WooThemes is the best Learning Management System ever!
-Version: 1.9.x
-Author: WooThemes
-Author URI: http://woothemes.com/
-License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-*/
-
 /**
  * Mixins
  */
@@ -920,8 +910,8 @@ License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2
  * Course Archives
  */
 
-#main .course, 
-#main .course-container {
+#main-course .course, 
+#main-course .course-container {
   .course-content {
     .course-featured-image {
       width: 20%;
@@ -937,6 +927,10 @@ License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2
     header, .entry {
       float: left;
       width: 100%;
+
+      a {
+        color: $color_links;
+      }
     }
     // If featured image is displayed, set width to 75%
     .course-featured-image ~ header, 

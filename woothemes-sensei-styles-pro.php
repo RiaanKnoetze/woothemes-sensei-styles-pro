@@ -12,7 +12,7 @@ Tested up to: 4.5
 Text Domain: woothemes-sensei-styles-pro
 Domain path: /lang/
 */
-/*  Copyright 2013  WooThemes  (email : info@woothemes.com)
+/*  Copyright 2016  WooThemes  (email : info@woothemes.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
