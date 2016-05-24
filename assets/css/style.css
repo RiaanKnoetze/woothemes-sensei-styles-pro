@@ -646,6 +646,9 @@
 /** 
  * Course Results 
  */
+#main .course-results header h2 {
+  padding: 0.618em 1em !important; }
+
 #main .course-results .course {
   padding: 0;
   margin: 0;
@@ -658,35 +661,43 @@
     margin: 0;
     padding: 0.618em 1em;
     border-bottom: 1px solid #e6e6e6;
-    background: #f7f7f7; }
+    background: #f7f7f7;
+    font-size: 1.2em; }
     #main .course-results .course-results-lessons h2 a, #main .course-results .course-results-lessons h3 a {
       color: #1e85be; }
     #main .course-results .course-results-lessons h2 .lesson-grade, #main .course-results .course-results-lessons h3 .lesson-grade {
       float: right; }
-  #main .course-results .course-results-lessons h4 {
+  #main .course-results .course-results-lessons h2 {
     margin: 0;
-    border-bottom: 1px solid #e6e6e6;
+    padding: 0;
+    background: transparent;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
     box-sizing: border-box;
     /* Opera/IE 8+ */ }
-    #main .course-results .course-results-lessons h4:after {
+    #main .course-results .course-results-lessons h2:after {
       content: "\0020";
       display: block;
       height: 0;
       overflow: hidden;
       clear: both; }
-    #main .course-results .course-results-lessons h4 a {
+    #main .course-results .course-results-lessons h2 a {
       color: #1e85be;
-      padding: 1em 1.618em;
+      padding: 0.618em 1.618em;
       float: left;
       margin-right: 1%; }
-    #main .course-results .course-results-lessons h4 .lesson-grade {
-      padding: 1em 1.618em;
+    #main .course-results .course-results-lessons h2 .lesson-grade {
+      padding: 0.618em 1.618em;
       float: right;
-      width: 10%;
+      width: 20%;
       text-align: right;
       border-left: 1px solid #e6e6e6; }
+    #main .course-results .course-results-lessons h2.total-grade {
+      padding: 0.618em 1em;
+      background-color: #f7f7f7; }
+      #main .course-results .course-results-lessons h2.total-grade .lesson-grade {
+        padding: 0;
+        border-left: none; }
 
 /**
  * My Courses 
