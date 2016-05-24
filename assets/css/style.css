@@ -457,9 +457,12 @@
           color: #555; }
         .sensei .module .module-lessons ul li a .preview-label {
           float: right;
-          color: #8fae1b;
+          color: #555;
           display: inline-block;
-          position: relative; }
+          position: relative;
+          background: transparent;
+          border-left: 1px solid #e6e6e6;
+          border-radius: 0; }
           .sensei .module .module-lessons ul li a .preview-label:before {
             font-family: 'FontAwesomeSensei';
             display: inline-block !important;
@@ -1266,7 +1269,7 @@ a.view-results-link,
 a.sensei-certificate-link {
   display: inline-block;
   padding: .236em .857em;
-  background: #e6e6e6;
+  background: #1e85be;
   float: right;
   margin-left: .236em;
   padding: .382em 1em;

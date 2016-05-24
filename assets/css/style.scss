@@ -461,9 +461,12 @@
 
             .preview-label {
               float: right;
-              color: $success;
+              color: $color_body;
               display: inline-block;
               position: relative;
+              background: transparent;
+              border-left: 1px solid $border_main;
+              border-radius: 0;
 
               &:before {
                 @include iconbefore();
@@ -1224,7 +1227,7 @@ a.view-results-link,
 a.sensei-certificate-link {
   display: inline-block;
   padding: .236em .857em;
-  background: $border_main;
+  background: $color_links;
   float: right;
   margin-left: .236em;
   padding: .382em 1em;
