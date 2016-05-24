@@ -1,3 +1,27 @@
+/*
+Plugin Name: Sensei
+Plugin URI: https://www.woothemes.com/products/sensei/
+Description: Sensei by WooThemes is the best Learning Management System ever!
+Version: 1.9.x
+Author: WooThemes
+Author URI: http://woothemes.com/
+License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+*/
+/**
+ * Mixins
+ */
+/**
+ * Variables
+ */
+/**
+ * Functions
+ */
+/**
+ * Mixins
+ */
+/**
+ * Animations
+ */
 @-webkit-keyframes spin-360 {
   from {
     -webkit-transform: rotate(0);
@@ -11,47 +35,6 @@
     -webkit-transform: rotate(0);
     transform: rotate(0);
     zoom: 1; } }
-
-/**
-* All logic for frontend grids
-*/
-/*
-*  Course page grid
-*/
-.course-container .first {
-  clear: left; }
-
-.course-container .last {
-  padding: 0px; }
-
-.course-container li.course {
-  padding: 12px;
-  float: left; }
-
-.columns-1 li.course {
-  width: 100%;
-  padding-right: 0px; }
-
-.columns-2 li.course {
-  width: 50%; }
-
-.columns-3 li.course {
-  width: 33.33%; }
-
-.columns-4 li.course {
-  width: 25%; }
-
-.columns-5 li.course {
-  width: 20%; }
-
-.columns-6 li.course {
-  width: 16.66%; }
-
-.columns-7 li.course {
-  width: 13.7%; }
-
-.columns-8 li.course {
-  width: 11.7%; }
 
 /**
  * Base
@@ -147,8 +130,8 @@
  */
 @font-face {
   font-family: 'FontAwesomeSensei';
-  src: url("../../fonts/fontawesome-webfont.eot");
-  src: url("../../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fontawesome-webfont.woff2") format("woff2"), url("../../fonts/fontawesome-webfont.woff") format("woff"), url("../../fonts/fontawesome-webfont.ttf") format("truetype"), url("../../fonts/fontawesome-webfont.svg#svgFontName") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#svgFontName") format("svg");
   font-weight: 400;
   font-style: normal; }
 
@@ -308,8 +291,6 @@
   border-top-color: #1e85be;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */ }
   .course .status:before, .course-lessons .status:before, .course-container .status:before {
@@ -633,8 +614,6 @@
   .sensei form .form-row input.input-text, .sensei form .form-row textarea {
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */
     width: 100%;
@@ -685,8 +664,6 @@
     border-bottom: 1px solid #e6e6e6;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */ }
     #main .course-results .course-results-lessons h4:after {
@@ -834,8 +811,6 @@
     font-weight: bold;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */ }
   .meter.orange > span, .meter.progressing > span {
@@ -944,9 +919,7 @@
 #learner-info .learner-content {
   float: left;
   width: calc(100% - 140px);
-  width: -webkit-calc(100% - 140px);
-  width: -moz-calc(100% - 140px);
-  width: -o-calc(100% - 140px); }
+  width: -webkit-calc(100% - 140px); }
   #learner-info .learner-content h2 {
     margin-top: 0; }
 
@@ -1059,8 +1032,6 @@
   line-height: 1.618em;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */
   white-space: nowrap;

@@ -23,7 +23,7 @@ var paths = {
 	scripts: ['assets/js/*.js' ],
 	adminScripts: ['assets/js/admin/*.js'],
 	css: ['assets/css/*.css'],
-    frontedCss: ['assets/css/frontend/*.scss']
+    frontedCss: ['assets/css/*.scss']
 };
 
 gulp.task( 'clean', function( cb ) {
