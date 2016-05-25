@@ -300,7 +300,7 @@
   .course .status.in-progress, .course-lessons .status.in-progress, .course-container .status.in-progress {
     border-top-color: #1e85be; }
     .course .status.in-progress:before, .course-lessons .status.in-progress:before, .course-container .status.in-progress:before {
-      content: '\f0c9';
+      content: '\f141';
       color: #1e85be; }
   .course .status.register, .course-lessons .status.register, .course-container .status.register {
     border-top-color: #b81c23; }
@@ -534,7 +534,8 @@
         .quiz form ol#sensei-quiz-list li ul li input {
           margin: 0 .382em 0 0; }
         .quiz form ol#sensei-quiz-list li ul li label {
-          vertical-align: middle; }
+          vertical-align: middle;
+          font-weight: normal; }
     .quiz form ol#sensei-quiz-list li .answer_message {
       position: absolute;
       right: 0;

@@ -258,7 +258,7 @@
     &.in-progress  {
       border-top-color: $color_links;
       &:before  {
-        content: '\f0c9';
+        content: '\f141';
         color: $color_links;
       }
     }
@@ -568,6 +568,7 @@
             }
             label  {
               vertical-align: middle;
+              font-weight: normal;
             }
           }
         }
@@ -752,9 +753,11 @@
       a {
         color: $color_links;
       }
+
       .lesson-grade {
         float: right;
       }
+
     }
     h2 {
       margin: 0;
