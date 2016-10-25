@@ -34,7 +34,7 @@ add_filter('sensei_lesson_placeholder_image_url', 'sensei_styles_get_new_placeho
 function sensei_styles_get_new_placeholder() {
 	global $sensei_styles_dir;
 
-	$placeholder_url = '<img src="' . $sensei_styles_dir . 'assets/images/placeholder.png" class="woo-image thumbnail alignleft" />';
+	$placeholder_url = '<img src="' . esc_url( $sensei_styles_dir . 'assets/images/placeholder.png' ) . '" class="woo-image thumbnail alignleft" />';
 	return $placeholder_url;
 }
 
