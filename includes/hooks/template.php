@@ -8,8 +8,6 @@
 // Prevent default Sensei styles from being loaded
 add_filter( 'sensei_disable_styles', '__return_true' );
 
-
-
 // Enqueue custom plugin scripes and styles
 add_action( 'wp_enqueue_scripts', 'sensei_pro_enqueue_styles', 20 );
 
@@ -25,8 +23,6 @@ function sensei_pro_enqueue_styles() {
     wp_enqueue_script( 'sensei-styles-pro-js' );
 }
 
-
-
 // Replace default placeholder imager
 add_filter('sensei_course_placeholder_image_url', 'sensei_styles_get_new_placeholder');
 add_filter('sensei_lesson_placeholder_image_url', 'sensei_styles_get_new_placeholder');
@@ -34,11 +30,9 @@ add_filter('sensei_lesson_placeholder_image_url', 'sensei_styles_get_new_placeho
 function sensei_styles_get_new_placeholder() {
 	global $sensei_styles_dir;
 
-	$placeholder_url = '<img src="' . $sensei_styles_dir . 'assets/images/placeholder.png" class="woo-image thumbnail alignleft" />';
+	$placeholder_url = '<img src="' . esc_url( $sensei_styles_dir . 'assets/images/placeholder.png' ) . '" class="woo-image thumbnail alignleft" />';
 	return $placeholder_url;
 }
-
-
 
 // Add theme name as body class for extra special styling
 add_filter( 'body_class', 'sensei_styles_get_theme_name' );
