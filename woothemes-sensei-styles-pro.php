@@ -35,7 +35,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
     require_once( 'includes/hooks/template.php' );
 
     // Check if Sensei is active
-if ( ! in_array( 'sensei/woothemes-sensei.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+if ( ! in_array( 'sensei-lms/sensei-lms.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )  ||
+     ! in_array( 'woothemes-sensei/woothemes-sensei.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )) {
     add_action( 'admin_notices', 'nosensei_admin_notice' );
     
 } else {
